@@ -20,7 +20,7 @@
   --overlay-hero:  rgba(20, 18, 15, 0.30);
 
   /* Typography Scale */
-  --font-serif:  'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-serif:  'Libre Baskerville', Georgia, 'Times New Roman', serif;
   --font-sans:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --fs-hero:     clamp(2.8rem, 6vw, 5.5rem);
