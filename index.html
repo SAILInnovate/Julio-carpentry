@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julio Carpentry — Bespoke Carpentry & Premium Fit-Outs | Manchester</title>
+  <meta name="description" content="Transform your space with bespoke carpentry and premium fit-outs across Manchester and the North West. Custom pergolas, kitchens, interiors, and commercial installations built to last." />
+  <meta name="theme-color" content="#2C2C2C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" id="nav-logo">Julio Carpentry</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#portfolio" class="nav__link" id="nav-portfolio">Portfolio</a></li>
+        <li><a href="#services" class="nav__link" id="nav-services">Services</a></li>
+        <li><a href="#about" class="nav__link" id="nav-about">About</a></li>
+        <li><a href="https://wa.me/447535891351" class="nav__cta" id="nav-cta" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <header class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-sunroom.png" alt="Glass-enclosed timber sunroom with warm oak framing and garden views" width="1920" height="1080" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <span class="hero__badge">Est. 2024 · Manchester</span>
+      <h1 class="hero__title">Transform Your Space.<br/>Built to Last.</h1>
+      <p class="hero__subtitle">Bespoke carpentry and premium fit-outs across Manchester and the North West. Quality craftsmanship that speaks for itself.</p>
+      <div class="hero__actions">
+        <a href="https://wa.me/447535891351" class="btn btn--primary" id="hero-cta" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Message on WhatsApp
+        </a>
+        <a href="#portfolio" class="btn btn--ghost" id="hero-portfolio">View Portfolio</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       PORTFOLIO
+       ============================================================ -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Selected Works</span>
+        <h2 class="section__title">The Portfolio</h2>
+        <hr class="section__divider" />
+      </div>
+
+      <div class="portfolio__filters reveal reveal-delay-1">
+        <button class="portfolio__filter active" data-filter="all" id="filter-all">All</button>
+        <button class="portfolio__filter" data-filter="outdoor" id="filter-outdoor">Outdoor Living</button>
+        <button class="portfolio__filter" data-filter="interior" id="filter-interior">Interiors</button>
+        <button class="portfolio__filter" data-filter="kitchen" id="filter-kitchen">Kitchens</button>
+        <button class="portfolio__filter" data-filter="commercial" id="filter-commercial">Commercial</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolio-grid">
+        <!-- Item 1: Glass Sunroom — Tall -->
+        <div class="portfolio__item portfolio__item--tall reveal" data-category="outdoor" id="portfolio-item-1">
+          <img src="images/hero-sunroom.png" alt="Glass-enclosed timber sunroom extension with oak framing" loading="lazy" />
+          <div class="portfolio__caption">
+            <span class="portfolio__caption-tag">Outdoor Living</span>
+            <h3 class="portfolio__caption-title">Timber Sunroom</h3>
+          </div>
+        </div>
+
+        <!-- Item 2: Pergola -->
+        <div class="portfolio__item reveal reveal-delay-1" data-category="outdoor" id="portfolio-item-2">
+          <img src="images/outdoor-pergola.png" alt="Modern louvered wooden pergola with outdoor dining area" loading="lazy" />
+          <div class="portfolio__caption">
+            <span class="portfolio__caption-tag">Outdoor Living</span>
+            <h3 class="portfolio__caption-title">Louvered Pergola</h3>
+          </div>
+        </div>
+
+        <!-- Item 3: Kitchen -->
+        <div class="portfolio__item reveal reveal-delay-2" data-category="kitchen" id="portfolio-item-3">
+          <img src="images/kitchen-fitout.png" alt="Sleek handleless kitchen installation with grey cabinetry" loading="lazy" />
+          <div class="portfolio__caption">
+            <span class="portfolio__caption-tag">Kitchen Fit-Out</span>
+            <h3 class="portfolio__caption-title">Handleless Kitchen</h3>
+          </div>
+        </div>
+
+        <!-- Item 4: Garden Archway -->
+        <div class="portfolio__item reveal" data-category="outdoor" id="portfolio-item-4">
+          <img src="images/garden-archway.png" alt="Custom timber garden archway with climbing roses" loading="lazy" />
+          <div class="portfolio__caption">
+            <span class="portfolio__caption-tag">Outdoor Living</span>
+            <h3 class="portfolio__caption-title">Garden Archway</h3>
+          </div>
+        </div>
+
+        <!-- Item 5: Shelving — Wide -->
+        <div class="portfolio__item portfolio__item--wide reveal reveal-delay-1" data-category="interior" id="portfolio-item-5">
+          <img src="images/bespoke-shelving.png" alt="Floating geometric white shelving unit in modern living room" loading="lazy" />
+          <div class="portfolio__caption">
+            <span class="portfolio__caption-tag">Bespoke Interior</span>
+            <h3 class="portfolio__caption-title">Geometric Shelving</h3>
+          </div>
+        </div>
+
+        <!-- Item 6: Commercial Kiosk -->
+        <div class="portfolio__item reveal reveal-delay-2" data-category="commercial" id="portfolio-item-6">
+          <img src="images/commercial-kiosk.png" alt="Custom-built retail kiosk with pink and white design" loading="lazy" />
+          <div class="portfolio__caption">
+            <span class="portfolio__caption-tag">Commercial</span>
+            <h3 class="portfolio__caption-title">Retail Kiosk</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES — Shock & Reframe
+       ============================================================ -->
+  <section class="section section--cream" id="services">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">What We Do</span>
+        <h2 class="section__title">Built Different</h2>
+        <hr class="section__divider" />
+      </div>
+
+      <div class="services__grid">
+        <!-- Outdoor Living -->
+        <div class="service-card reveal" id="service-outdoor">
+          <div class="service-card__number">01</div>
+          <h3 class="service-card__title">Outdoor Living</h3>
+          <p class="service-card__text">Your garden is probably dead space for nine months of the year. Standard patios just sit there gathering moss while you wait for the sun. <strong>We change that entirely.</strong> Our custom timber pergolas and glass enclosures turn your outdoors into a permanent living area. You get a high-end sanctuary built to outlast the British winter.</p>
+        </div>
+
+        <!-- Kitchen Fit-Outs -->
+        <div class="service-card reveal reveal-delay-1" id="service-kitchen">
+          <div class="service-card__number">02</div>
+          <h3 class="service-card__title">Kitchen Fit-Outs</h3>
+          <p class="service-card__text">Off-the-shelf kitchens start degrading the moment they are installed. The hinges drop, the edges peel, and the luxury feel vanishes instantly. <strong>Real value comes from precision fitting.</strong> We install seamless, handleless kitchens engineered for perfect alignment and absolute durability. It feels expensive because it is built flawlessly.</p>
+        </div>
+
+        <!-- Bespoke Interiors -->
+        <div class="service-card reveal" id="service-interiors">
+          <div class="service-card__number">03</div>
+          <h3 class="service-card__title">Bespoke Interiors</h3>
+          <p class="service-card__text">Buying standard furniture is the fastest way to make a premium room look cheap. Awkward gaps and dead corners destroy the aesthetic of your home. <strong>True luxury is entirely bespoke.</strong> We design and build custom shelving and storage that integrates seamlessly into your architecture. Everything has an exact place.</p>
+        </div>
+
+        <!-- Commercial Spaces -->
+        <div class="service-card reveal reveal-delay-1" id="service-commercial">
+          <div class="service-card__number">04</div>
+          <h3 class="service-card__title">Commercial Spaces</h3>
+          <p class="service-card__text">Customers make split-second decisions about your brand based purely on your fit-out. A generic shopfront silently kills your credibility before a word is spoken. <strong>We build custom retail kiosks and commercial installations that command attention instantly.</strong> Your physical space does the selling for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY US
+       ============================================================ -->
+  <section class="section why-us" id="about">
+    <div class="container">
+      <div class="why-us__grid">
+        <div class="why-us__visual reveal">
+          <div class="why-us__logo-mark">JC</div>
+          <div class="why-us__logo-name">Julio Carpentry</div>
+          <div class="why-us__logo-tagline">Quality Craftsmanship, Built to Last</div>
+        </div>
+
+        <div class="why-us__content reveal reveal-delay-1">
+          <h2 class="why-us__subtitle">Why Work<br/>With Us</h2>
+          <p class="why-us__desc">We don't just build things — we engineer spaces that elevate how you live and work. Every project is a direct collaboration, with no middlemen and no compromises.</p>
+
+          <ul class="why-us__list">
+            <li class="why-us__item">
+              <div class="why-us__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <div class="why-us__item-title">Precision Engineering</div>
+                <div class="why-us__item-desc">Millimetre-perfect builds with premium materials</div>
+              </div>
+            </li>
+            <li class="why-us__item">
+              <div class="why-us__icon">
+                <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <div class="why-us__item-title">Commercial & Residential</div>
+                <div class="why-us__item-desc">Expert across both domestic and commercial projects</div>
+              </div>
+            </li>
+            <li class="why-us__item">
+              <div class="why-us__icon">
+                <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <div class="why-us__item-title">Direct Communication</div>
+                <div class="why-us__item-desc">One point of contact from quote to completion</div>
+              </div>
+            </li>
+            <li class="why-us__item">
+              <div class="why-us__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <div class="why-us__item-title">Built to Last</div>
+                <div class="why-us__item-desc">Structures engineered for decades, not seasons</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FULL-WIDTH IMAGE BREAK
+       ============================================================ -->
+  <div class="image-break reveal" id="image-break">
+    <img src="images/outdoor-pergola.png" alt="Modern wooden pergola with outdoor dining — Julio Carpentry" loading="lazy" />
+    <div class="image-break__overlay"></div>
+    <div class="image-break__text">
+      <span class="image-break__label">Manchester & The North West</span>
+      <span class="image-break__headline">Your Vision, Our Craft</span>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__top reveal">
+        <h2 class="footer__headline">Ready to start your project?<br/>Let's talk.</h2>
+        <p class="footer__sub">No hard sell. Just a direct conversation about what you need.</p>
+
+        <a href="https://wa.me/447535891351" class="btn--whatsapp-large" id="footer-cta" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+
+        <div class="footer__phone">
+          <a href="tel:+447535891351" id="footer-phone">+44 7535 891351</a>
+        </div>
+      </div>
+
+      <hr class="footer__divider" />
+
+      <div class="footer__bottom">
+        <div class="footer__brand">
+          <span class="footer__logo-text">Julio Carpentry</span>
+          <span class="footer__tagline">Est. 2024</span>
+        </div>
+        <div class="footer__location">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Manchester & The North West
+        </div>
+        <div class="footer__legal">&copy; 2024 Julio Carpentry. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+       ============================================================ -->
+  <a href="https://wa.me/447535891351" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+
+  <!-- ============================================================
+       LIGHTBOX
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+  </div>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="script.js"></script>
+</body>
+</html>
